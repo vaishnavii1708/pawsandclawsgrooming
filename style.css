@@ -155,3 +155,52 @@ footer {
   padding: 20px;
   margin-top: auto;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .why-choose-us .reasons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reason {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    section,
+    .contact-form,
+    .testimonials {
+        padding: 20px;
+    }
+
+    .gallery-images {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%;
+    }
+}
